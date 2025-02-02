@@ -3,26 +3,17 @@ import java.util.Stack;
 
 public class Solution {
     public int[] solution(int []arr) {
+        int[] answer = {};
         
         Stack<Integer> stack = new Stack<>();
         
         for(Integer i : arr) {
             
-            try{
-                if(stack.peek() != i)
-                    stack.push(i);
-            }
-            catch(Exception e){
+            if(stack.peek() != i || stack.peek() != null)
                 stack.push(i);
-            }
         }
         
-        int[] answer = new int[stack.size()];
-        
-        for(int i=answer.length-1;i>=0;i--){
-            answer[i]=stack.pop();
-        }
-        
+        System.out.print(stack);
         
         return answer;
     }
