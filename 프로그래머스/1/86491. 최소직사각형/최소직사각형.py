@@ -5,12 +5,15 @@ def solution(sizes):
     # 3. 1번과 2번의 곲 -> 최소값
     max_arr = []
     min_arr = []
+    # for i in sizes:
+    #     if i[0] >= i[1]:
+    #         max_arr.append(i[0])
+    #         min_arr.append(i[1])
+    #     else:
+    #         max_arr.append(i[1])
+    #         min_arr.append(i[0])
     for i in sizes:
-        if i[0] >= i[1]:
-            max_arr.append(i[0])
-            min_arr.append(i[1])
-        else:
-            max_arr.append(i[1])
-            min_arr.append(i[0])
+        max_arr.append(max(i))
+        min_arr.append(min(i))
     
     return max(max_arr) * max(min_arr)
