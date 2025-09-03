@@ -1,4 +1,4 @@
 # programmers
 This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
 
-Data engineering requires Python and Java.
+Data engineering requires Python and Java, MySQL.
